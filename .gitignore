@@ -1,0 +1,9 @@
+target/
+release.properties
+
+# IntelliJ files
+.idea
+*.iml
+
+# Mac OS files
+.DS_Store

@@ -1,0 +1,8 @@
+Posting to the SHR
+-Dorg.regenstrief.ohie.shr.host=http://iol.test.ohie.org:5001/xdsrepository
+
+Posting to the CR (Mohawk)
+-Dorg.regenstrief.ohie.cr.host=iol.test.ohie.org -Dorg.regenstrief.ohie.cr.port.pix=8988 -Dorg.regenstrief.ohie.cr.port.pdq=8989
+
+
+
