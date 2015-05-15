@@ -233,13 +233,35 @@ public class XdsMessageUtil {
      * meta0-data
      * @param documentId
      */
+   /** public static void assertHasDocumentId(AdhocQueryResponse queryResponse, String documentId) {
+
+        boolean hasMatch = false;
+        for(JAXBElement<? extends IdentifiableType> jaxElement : queryResponse.getRegistryObjectList().getIdentifiable())
+        {
+            //System.out.println("aaaah " + jaxElement.getValue().getId());
+            if(jaxElement.getValue() instanceof ExtrinsicObjectType) {
+
+                Assert.assertEquals(jaxElement.getValue().getId(), documentId);
+
+                //System.out.println((RegistryObjectType)jaxElement.getValue());
+                //hasMatch |= InfosetUtil.getExternalIdentifierValue(XDSConstants.UUID_XDSDocumentEntry_uniqueId, (RegistryObjectType)jaxElement.getValue()).equals(documentId);
+            }
+
+        }
+
+
+        //(String.format("Document %s not found in the result set", documentId), hasMatch);
+    }**/
+
+
     public static void assertHasDocumentId(AdhocQueryResponse queryResponse, String documentId) {
 
         boolean hasMatch = false;
         for(JAXBElement<? extends IdentifiableType> jaxElement : queryResponse.getRegistryObjectList().getIdentifiable())
         {
-
+            System.out.println((RegistryObjectType)jaxElement.getValue());
             if(jaxElement.getValue() instanceof ExtrinsicObjectType) {
+                System.out.println((RegistryObjectType)jaxElement.getValue());
                 hasMatch |= InfosetUtil.getExternalIdentifierValue(XDSConstants.UUID_XDSDocumentEntry_uniqueId, (RegistryObjectType)jaxElement.getValue()).equals(documentId);
             }
 
@@ -248,19 +270,35 @@ public class XdsMessageUtil {
         Assert.assertTrue(String.format("Document %s not found in the result set", documentId), hasMatch);
     }
 
+
+
     /**
      * Get the extrinsic object
      */
-    private static ExtrinsicObjectType getExtrinsicObject(String documentId, AdhocQueryResponse queryResponse)
+   /** private static ExtrinsicObjectType getExtrinsicObject(String documentId, AdhocQueryResponse queryResponse)
     {
-        for(JAXBElement<? extends IdentifiableType> jaxElement : queryResponse.getRegistryObjectList().getIdentifiable())
-        {
+        for(JAXBElement<? extends IdentifiableType> jaxElement : queryResponse.getRegistryObjectList().getIdentifiable()) {
 
-            if(jaxElement.getValue() instanceof ExtrinsicObjectType && InfosetUtil.getExternalIdentifierValue(XDSConstants.UUID_XDSDocumentEntry_uniqueId, (RegistryObjectType)jaxElement.getValue()).equals(documentId))
-                return (ExtrinsicObjectType)jaxElement.getValue();
+            if (jaxElement.getValue() instanceof ExtrinsicObjectType) {
+                if ((jaxElement.getValue().getId()).equals(documentId)) {
+                    return (ExtrinsicObjectType) jaxElement.getValue();
+                }
+            }
         }
         return null;
-    }
+    }**/
+
+
+   private static ExtrinsicObjectType getExtrinsicObject(String documentId, AdhocQueryResponse queryResponse)
+   {
+       for(JAXBElement<? extends IdentifiableType> jaxElement : queryResponse.getRegistryObjectList().getIdentifiable())
+       {
+
+           if(jaxElement.getValue() instanceof ExtrinsicObjectType && InfosetUtil.getExternalIdentifierValue(XDSConstants.UUID_XDSDocumentEntry_uniqueId, (RegistryObjectType)jaxElement.getValue()).equals(documentId))
+               return (ExtrinsicObjectType)jaxElement.getValue();
+       }
+       return null;
+   }
 
     /**
      * Create the retrivee requst
@@ -275,6 +313,7 @@ public class XdsMessageUtil {
         Assert.assertNotNull("Missing document meta-data", documentMetaData);
         DocumentRequest dr = new DocumentRequest();
         dr.setDocumentUniqueId(documentId);
+        System.out.println("Infoset  " + InfosetUtil.getSlotValue(documentMetaData.getSlot(), XDSConstants.SLOT_NAME_REPOSITORY_UNIQUE_ID, ""));
         dr.setRepositoryUniqueId(InfosetUtil.getSlotValue(documentMetaData.getSlot(), XDSConstants.SLOT_NAME_REPOSITORY_UNIQUE_ID, ""));
         retVal.getDocumentRequest().add(dr);
 
@@ -292,6 +331,7 @@ public class XdsMessageUtil {
         for(DocumentResponse dr : retrieveResponse.getDocumentResponse())
         {
             ExtrinsicObjectType eot = getExtrinsicObject(dr.getDocumentUniqueId(), queryResponse);
+            System.out.println("ee" + dr.getDocumentUniqueId());
             Assert.assertNotNull("Missing document meta-data in query", eot);
             // Get the hash
             String hashValue = InfosetUtil.getSlotValue(eot.getSlot(), XDSConstants.SLOT_NAME_HASH, null),

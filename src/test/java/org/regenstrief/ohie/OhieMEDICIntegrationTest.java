@@ -48,6 +48,7 @@ public class OhieMEDICIntegrationTest {
 
     }
 
+    @Ignore
     @Test
     public void OhieCrResolvePatient()
     {
