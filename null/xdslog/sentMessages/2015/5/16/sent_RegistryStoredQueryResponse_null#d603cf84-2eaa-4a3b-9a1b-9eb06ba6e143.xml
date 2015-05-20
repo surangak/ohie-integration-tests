@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:Action>urn:ihe:iti:2007:RegistryStoredQueryResponse</wsa:Action>
+<wsa:RelatesTo>uuid:d603cf84-2eaa-4a3b-9a1b-9eb06ba6e143</wsa:RelatesTo>
+</soapenv:Header>
+<soapenv:Body>
+<query:AdhocQueryResponse xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<rs:RegistryErrorList xmlns:rs="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0">
+<rs:RegistryError codeContext="GetDocuments Stored Query for LeafClass is limited to 25 documents on this Registry. Your query targeted 27 documents" errorCode="XDSRegistryOutOfResources" location="&#10;&#9;gov.nist.registry.ws.sq.FindDocuments.runSpecific(FindDocuments.java:71)&#10;&#9;gov.nist.registry.ws.sq.StoredQuery.run(StoredQuery.java:77)&#10;&#9;gov.nist.registry.ws.AdhocQueryRequest.stored_query(AdhocQueryRequest.java:306)&#10;&#9;gov.nist.registry.ws.AdhocQueryRequest.AdhocQueryRequestInternal(AdhocQueryRequest.java:236)&#10;&#9;gov.nist.registry.ws.AdhocQueryRequest.adhocQueryRequest(AdhocQueryRequest.java:125)&#10;&#9;gov.nist.registry.ws.serviceclasses.AbstractRegistry.processAdhocQueryRequest(AbstractRegistry.java:114)&#10;&#9;gov.nist.registry.ws.serviceclasses.AbstractRegistry.AdhocQueryRequest(AbstractRegistry.java:101)&#10;&#9;sun.reflect.GeneratedMethodAccessor76.invoke(Unknown Source)&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;java.lang.reflect.Method.invoke(Method.java:622)&#10;&#9;gov.nist.registry.common2.service.AbstractXDSRawXMLINoutMessageReceiver.invokeBusinessLogic(AbstractXDSRawXMLINoutMessageReceiver.java:151)&#10;&#9;org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic(AbstractInOutMessageReceiver.java:40)&#10;&#9;org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:114)&#10;&#9;org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:173)&#10;&#9;org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:167)&#10;" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</rs:RegistryErrorList>
+<rim:RegistryObjectList xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"/>
+</query:AdhocQueryResponse>
+</soapenv:Body>
+</soapenv:Envelope>

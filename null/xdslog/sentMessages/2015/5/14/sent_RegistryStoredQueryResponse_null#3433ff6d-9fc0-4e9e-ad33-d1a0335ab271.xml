@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:Action>urn:ihe:iti:2007:RegistryStoredQueryResponse</wsa:Action>
+<wsa:RelatesTo>uuid:3433ff6d-9fc0-4e9e-ad33-d1a0335ab271</wsa:RelatesTo>
+</soapenv:Header>
+<soapenv:Body>
+<query:AdhocQueryResponse xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+<rim:RegistryObjectList xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0">
+<ns1:ExtrinsicObject xmlns:ns1="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" home="" id="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" isOpaque="false" lid="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" mimeType="text/xml" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Approved">
+            <ns1:Slot name="creationTime">
+                <ns1:ValueList>
+                    <ns1:Value>20150504</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="hash">
+                <ns1:ValueList>
+                    <ns1:Value>C6DFA3BFF13094E6D6D204CF29F96FD5710DFA6B</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="languageCode">
+                <ns1:ValueList>
+                    <ns1:Value>en-us</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="repositoryUniqueId">
+                <ns1:ValueList>
+                    <ns1:Value>1.19.6.24.109.42.1.5.1</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="serviceStartTime">
+                <ns1:ValueList>
+                    <ns1:Value>201505041006</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="serviceStopTime">
+                <ns1:ValueList>
+                    <ns1:Value>201505041006</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="size">
+                <ns1:ValueList>
+                    <ns1:Value>17390</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="sourcePatientId">
+                <ns1:ValueList>
+                    <ns1:Value>5132894987946830602^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Slot name="sourcePatientInfo">
+                <ns1:ValueList>
+                    <ns1:Value>PID-3|5132894987946830602^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</ns1:Value>
+                    <ns1:Value>PID-5|Hepburn^Katharine</ns1:Value>
+                    <ns1:Value>PID-7|19910606</ns1:Value>
+                    <ns1:Value>PID-8|F</ns1:Value>
+                </ns1:ValueList>
+            </ns1:Slot>
+            <ns1:Name>
+                <ns1:LocalizedString charset="UTF-8" value="Immunization History" xml:lang="en-us"/>
+            </ns1:Name>
+            <ns1:Description/>
+            <ns1:VersionInfo versionName="1.1"/>
+            <ns1:Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:a92e699e-1de5-4f90-90be-a429e7d4831d" lid="urn:uuid:a92e699e-1de5-4f90-90be-a429e7d4831d" nodeRepresentation="" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="authorInstitution">
+                    <ns1:ValueList>
+                        <ns1:Value>Dr. Family's Family Health Practice</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Slot name="authorPerson">
+                    <ns1:ValueList>
+                        <ns1:Value>1111^^^^^^^^&amp;1.3.6.1.4.1.21367.200.99&amp;ISO</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Slot name="authorRole">
+                    <ns1:ValueList>
+                        <ns1:Value>Attending</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name/>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:3069403e-9a25-40d6-ba3b-c95c57e98009" lid="urn:uuid:3069403e-9a25-40d6-ba3b-c95c57e98009" nodeRepresentation="Outpatient Care" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>Connect-a-thon practiceSettingCodes</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="Outpatient Care" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:2092d525-d86c-402d-95d4-9753782d09f3" lid="urn:uuid:2092d525-d86c-402d-95d4-9753782d09f3" nodeRepresentation="57055-6" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>2.16.840.1.113883.6.1</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="Antepartum Summary Note" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:7ac73f00-8a68-40f8-9db3-6bf30dcd1891" lid="urn:uuid:7ac73f00-8a68-40f8-9db3-6bf30dcd1891" nodeRepresentation="1.3.6.1.4.1.21367.2006.7.101" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>Connect-a-thon confidentialityCodes</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="Normal" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:f460ab1c-b2d9-4de8-a831-354c8fed7ff7" lid="urn:uuid:f460ab1c-b2d9-4de8-a831-354c8fed7ff7" nodeRepresentation="urn:ihe:pcc:aps:2007" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>1.3.6.1.4.1.19376.1.2.3</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="urn:ihe:pcc:aps:2007" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:26fb2152-1885-4c5d-86df-d781bc24b4bf" lid="urn:uuid:26fb2152-1885-4c5d-86df-d781bc24b4bf" nodeRepresentation="57055-6" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>2.16.840.1.113883.6.1</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="Antepartum Summary Note" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1" classifiedObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" home="" id="urn:uuid:f3b06734-297a-494b-8526-19bdd6ae6d77" lid="urn:uuid:f3b06734-297a-494b-8526-19bdd6ae6d77" nodeRepresentation="PC" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:Classification" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted">
+                <ns1:Slot name="codingScheme">
+                    <ns1:ValueList>
+                        <ns1:Value>2.16.840.1.113883.5.11</ns1:Value>
+                    </ns1:ValueList>
+                </ns1:Slot>
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="Primary Care Clinic" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:Classification>
+            <ns1:ExternalIdentifier home="" id="urn:uuid:d400e404-b7bf-4382-bf2f-89a9acdb59f1" identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab" lid="urn:uuid:d400e404-b7bf-4382-bf2f-89a9acdb59f1" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier" registryObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted" value="2.16.840.1.113883.3.72.5.9.1.0.5386503746583552594111111111">
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="XDSDocumentEntry.uniqueId" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:ExternalIdentifier>
+            <ns1:ExternalIdentifier home="" id="urn:uuid:9745acd9-2343-4a38-85c6-359b535543bc" identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427" lid="urn:uuid:9745acd9-2343-4a38-85c6-359b535543bc" objectType="urn:oasis:names:tc:ebxml-regrep:ObjectType:RegistryObject:ExternalIdentifier" registryObject="urn:uuid:62284905-8672-4cea-a966-86b0127b9802" status="urn:oasis:names:tc:ebxml-regrep:StatusType:Submitted" value="79^^^CR_CID&amp;0.0.0.0.0&amp;ISO">
+                <ns1:Name>
+                    <ns1:LocalizedString charset="UTF-8" value="XDSDocumentEntry.patientId" xml:lang="en-us"/>
+                </ns1:Name>
+                <ns1:Description/>
+                <ns1:VersionInfo versionName="1.1"/>
+            </ns1:ExternalIdentifier>
+        </ns1:ExtrinsicObject>
+</rim:RegistryObjectList>
+</query:AdhocQueryResponse>
+</soapenv:Body>
+</soapenv:Envelope>

@@ -67,7 +67,7 @@ public class SaveClinicalData extends TestCase {
     @Test
     public void testPostMultipleXDSbmessage(){
         try {
-            testPost("xdsb/xdsb-02.xml");
+            testPost("xdsb/xdsb-01.xml");
         } catch (Exception e) {
             e.printStackTrace();
         }

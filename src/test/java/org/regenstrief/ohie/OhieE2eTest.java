@@ -37,16 +37,45 @@ public class OhieE2eTest {
      * @throws JAXBException
      */
 
+
     @Test
     public void testSuccessfulPOST() throws HL7Exception, IOException, LLPException, JAXBException {
 
          String documentId = String.format("1.3.6.1.4.1.21367.2010.1.2.%s", new SimpleDateFormat("HHmmss").format(new Date()));
+         ModifyXDSbMessage modify = new ModifyXDSbMessage();
+         modify.modify("OHIE-XDS-01-30.xml");
          ProvideAndRegisterDocumentSetRequestType pnrRequest = XdsMessageUtil.loadMessage("OHIE-XDS-01-30", ProvideAndRegisterDocumentSetRequestType.class);
          RegistryResponseType xdsResponse = XdsMessageUtil.provideAndRegister(pnrRequest);
          XdsMessageUtil.assertSuccess(xdsResponse);
 
     }
 
+
+    @Test
+    public void testPOSTWithInvalidPatient() throws HL7Exception, IOException, LLPException, JAXBException {
+
+        String documentId = String.format("1.3.6.1.4.1.21367.2010.1.2.%s", new SimpleDateFormat("HHmmss").format(new Date()));
+        ModifyXDSbMessage modify = new ModifyXDSbMessage();
+        modify.modify("OHIE-XDS-01-60.xml");
+        ProvideAndRegisterDocumentSetRequestType pnrRequest = XdsMessageUtil.loadMessage("OHIE-XDS-01-60", ProvideAndRegisterDocumentSetRequestType.class);
+        RegistryResponseType xdsResponse = XdsMessageUtil.provideAndRegister(pnrRequest);
+        System.out.println(xdsResponse.getStatus());
+        //XdsMessageUtil.assertSuccess(xdsResponse);
+
+    }
+
+    @Test
+    public void testPOSTWithInvalidProvider() throws HL7Exception, IOException, LLPException, JAXBException {
+
+        String documentId = String.format("1.3.6.1.4.1.21367.2010.1.2.%s", new SimpleDateFormat("HHmmss").format(new Date()));
+        ModifyXDSbMessage modify = new ModifyXDSbMessage();
+        modify.modify("OHIE-XDS-01-60.xml");
+        ProvideAndRegisterDocumentSetRequestType pnrRequest = XdsMessageUtil.loadMessage("OHIE-XDS-01-60", ProvideAndRegisterDocumentSetRequestType.class);
+        RegistryResponseType xdsResponse = XdsMessageUtil.provideAndRegister(pnrRequest);
+        System.out.println(xdsResponse.getStatus());
+        //XdsMessageUtil.assertSuccess(xdsResponse);
+
+    }
 
     @Test
     public void testSuccessfulQuery() throws HL7Exception, IOException, LLPException, JAXBException{
@@ -65,4 +94,39 @@ public class OhieE2eTest {
          XdsMessageUtil.assertMatchesHash(queryResponse, retrieveResponse);
 
     }
+
+    @Test
+    public void testSuccessfulMultiplePOST() throws HL7Exception, IOException, LLPException, JAXBException {
+
+        String documentId = String.format("1.3.6.1.4.1.21367.2010.1.2.%s", new SimpleDateFormat("HHmmss").format(new Date()));
+        ModifyMultipleXDSbMessage modify = new ModifyMultipleXDSbMessage();
+        modify.modify("OHIE-XDS-01-80.xml");
+        ProvideAndRegisterDocumentSetRequestType pnrRequest = XdsMessageUtil.loadMessage("OHIE-XDS-01-80", ProvideAndRegisterDocumentSetRequestType.class);
+        RegistryResponseType xdsResponse = XdsMessageUtil.provideAndRegister(pnrRequest);
+        XdsMessageUtil.assertSuccess(xdsResponse);
+
+    }
+
+    @Test
+    public void testSuccessfulMultipleQuery() throws HL7Exception, IOException, LLPException, JAXBException{
+
+        // STEP 40 - Load the XDS query and perform a query
+
+        AdhocQueryRequest queryRequest = XdsMessageUtil.loadMessage("OHIE-XDS-01-90", AdhocQueryRequest.class);
+        //XdsMessageUtil.updateAdhocQueryRequest(queryRequest, assertTerser.getSegment("/QUERY_RESPONSE(0)/PID"));
+        AdhocQueryResponse queryResponse = XdsMessageUtil.registryStoredQuery(queryRequest);
+        XdsMessageUtil.assertSuccess(queryResponse);
+        XdsMessageUtil.assertHasDocumentId(queryResponse, "2");
+
+        // STEP 50 - Retrieve
+        /**RetrieveDocumentSetRequestType retrieveRequest =  XdsMessageUtil.createRetrieveRequest(documentId, queryResponse);
+        RetrieveDocumentSetResponseType retrieveResponse = XdsMessageUtil.retrieveDocumentSet(retrieveRequest);
+        assertEquals(1, retrieveResponse.getDocumentResponse().size());
+        XdsMessageUtil.assertMatchesHash(queryResponse, retrieveResponse);**/
+
+    }
+
+
+
+
 }

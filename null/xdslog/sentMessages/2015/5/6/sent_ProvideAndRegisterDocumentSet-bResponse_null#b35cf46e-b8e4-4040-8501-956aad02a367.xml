@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:a8979dca-d95e-4b1d-a29a-1c913e4d52ea</wsa:MessageID>
+<wsa:RelatesTo>uuid:b35cf46e-b8e4-4040-8501-956aad02a367</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList highestSeverity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error">
+<ns3:RegistryError codeContext="Document id 2009.9.1.2455 is duplicate" errorCode="XDSRegistryNotAvailable" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

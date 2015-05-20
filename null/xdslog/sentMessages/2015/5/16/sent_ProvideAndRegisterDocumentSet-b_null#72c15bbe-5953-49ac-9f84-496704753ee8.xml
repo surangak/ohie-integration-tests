@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+<S:Header>
+<To xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">http://iol.test.ohie.org:5001/xdsrepository</To>
+<Action xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b</Action>
+<ReplyTo xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">
+    <Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+</ReplyTo>
+<MessageID xmlns="http://www.w3.org/2005/08/addressing">uuid:72c15bbe-5953-49ac-9f84-496704753ee8</MessageID>
+</S:Header>
+<S:Body>
+<ns4:ProvideAndRegisterDocumentSetRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0">
+<ns3:SubmitObjectsRequest>
+<RegistryObjectList>
+<ExtrinsicObject id="urn:uuid:A 9087831b-89ba-4f7a-9399-ca6693bbcc08" mimeType="text/xml" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1">
+<Slot name="creationTime">
+<ValueList>
+<Value>20150504</Value>
+</ValueList>
+</Slot>
+<Slot name="languageCode">
+<ValueList>
+<Value>en-us</Value>
+</ValueList>
+</Slot>
+<Slot name="serviceStartTime">
+<ValueList>
+<Value>201505041006</Value>
+</ValueList>
+</Slot>
+<Slot name="serviceStopTime">
+<ValueList>
+<Value>201505041006</Value>
+</ValueList>
+</Slot>
+<Slot name="sourcePatientId">
+<ValueList>
+<Value>5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</Value>
+</ValueList>
+</Slot>
+<Slot name="sourcePatientInfo">
+<ValueList>
+<Value>PID-3|5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</Value>
+<Value>PID-5|Heyworth^Rita</Value>
+<Value>PID-7|19910606</Value>
+<Value>PID-8|F</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Immunization History"/>
+</Name>
+<Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:e3a3eff9-0766-48f3-8ba6-4857d7b35241" nodeRepresentation="">
+<Slot name="authorPerson">
+<ValueList>
+<Value>8812399^^^^^^^^&amp;2.25.309768652999692686176651983274504471835.646.3.4&amp;ISO</Value>
+</ValueList>
+</Slot>
+<Slot name="authorInstitution">
+<ValueList>
+<Value>Dr. Family's Family Health Practice</Value>
+</ValueList>
+</Slot>
+<Slot name="authorRole">
+<ValueList>
+<Value>Attending</Value>
+</ValueList>
+</Slot>
+</Classification>
+<Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:70ef28f1-89f3-4693-997a-15fdb153596d" nodeRepresentation="Outpatient Care">
+<Slot name="codingScheme">
+<ValueList>
+<Value>Connect-a-thon practiceSettingCodes</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Outpatient Care"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:952a4353-e9fd-4014-8857-73654e4f9f71" nodeRepresentation="57055-6">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.6.1</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Antepartum Summary Note"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:d51ed0aa-2316-4f5f-ad2a-3e462d95689d" nodeRepresentation="1.3.6.1.4.1.21367.2006.7.101">
+<Slot name="codingScheme">
+<ValueList>
+<Value>Connect-a-thon confidentialityCodes</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Normal"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:15ae6a3f-6e48-4063-800d-642f13af3705" nodeRepresentation="urn:ihe:pcc:aps:2007">
+<Slot name="codingScheme">
+<ValueList>
+<Value>1.3.6.1.4.1.19376.1.2.3</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="urn:ihe:pcc:aps:2007"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:93d215ec-8d58-410a-ad90-c9e850e669fa" nodeRepresentation="57055-6">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.6.1</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Antepartum Summary Note"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:b148e3a0-af4a-4582-9ece-3a7b70f211f8" nodeRepresentation="PC">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.5.11</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Primary Care Clinic"/>
+</Name>
+</Classification>
+<ExternalIdentifier id="urn:uuid:e089b951-6afa-42b9-8573-65738e9cd7fc" identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427" registryObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" value="5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO">
+<Name>
+<LocalizedString value="XDSDocumentEntry.patientId"/>
+</Name>
+</ExternalIdentifier>
+<ExternalIdentifier id="urn:uuid:6c9eac10-4d6f-4c5a-9874-3bc7777bab27" identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab" registryObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" value="2.16.840.1.113883.3.72.5.9.1.0.5386503746860463930111111111">
+<Name>
+<LocalizedString value="XDSDocumentEntry.uniqueId"/>
+</Name>
+</ExternalIdentifier>
+</ExtrinsicObject>
+<ExtrinsicObject id="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" mimeType="text/xml" objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1">
+<Slot name="creationTime">
+<ValueList>
+<Value>20150504</Value>
+</ValueList>
+</Slot>
+<Slot name="languageCode">
+<ValueList>
+<Value>en-us</Value>
+</ValueList>
+</Slot>
+<Slot name="serviceStartTime">
+<ValueList>
+<Value>201505041006</Value>
+</ValueList>
+</Slot>
+<Slot name="serviceStopTime">
+<ValueList>
+<Value>201505041006</Value>
+</ValueList>
+</Slot>
+<Slot name="sourcePatientId">
+<ValueList>
+<Value>5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</Value>
+</ValueList>
+</Slot>
+<Slot name="sourcePatientInfo">
+<ValueList>
+<Value>PID-3|5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO</Value>
+<Value>PID-5|Heyworth^Rita</Value>
+<Value>PID-7|19910606</Value>
+<Value>PID-8|F</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Immunization History"/>
+</Name>
+<Classification classificationScheme="urn:uuid:93606bcf-9494-43ec-9b4e-a7748d1a838d" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:57f57b67-4060-45b2-82e9-aba56bbae9e5" nodeRepresentation="">
+<Slot name="authorPerson">
+<ValueList>
+<Value>8812399^^^^^^^^&amp;2.25.309768652999692686176651983274504471835.646.3.4&amp;ISO</Value>
+</ValueList>
+</Slot>
+<Slot name="authorInstitution">
+<ValueList>
+<Value>Dr. Family's Family Health Practice</Value>
+</ValueList>
+</Slot>
+<Slot name="authorRole">
+<ValueList>
+<Value>Attending</Value>
+</ValueList>
+</Slot>
+</Classification>
+<Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:56945cd6-9d11-4415-8167-cffad0e596fb" nodeRepresentation="Outpatient Care">
+<Slot name="codingScheme">
+<ValueList>
+<Value>Connect-a-thon practiceSettingCodes</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Outpatient Care"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:46f57f5c-0c92-450e-913d-ce95345e582c" nodeRepresentation="57055-6">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.6.1</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Antepartum Summary Note"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:407df214-e1ac-4b73-9eb2-f4e8b6c53a04" nodeRepresentation="1.3.6.1.4.1.21367.2006.7.101">
+<Slot name="codingScheme">
+<ValueList>
+<Value>Connect-a-thon confidentialityCodes</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Normal"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:8e079c88-5c9a-453c-8ce1-2dc2354d45a4" nodeRepresentation="urn:ihe:pcc:aps:2007">
+<Slot name="codingScheme">
+<ValueList>
+<Value>1.3.6.1.4.1.19376.1.2.3</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="urn:ihe:pcc:aps:2007"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:5405f5c9-f8d2-4ded-b3b1-a64defd48c7a" nodeRepresentation="57055-6">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.6.1</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Antepartum Summary Note"/>
+</Name>
+</Classification>
+<Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1" classifiedObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" id="urn:uuid:c842215f-fd3a-4b84-bc90-1d8422bc4b12" nodeRepresentation="PC">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.5.11</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Primary Care Clinic"/>
+</Name>
+</Classification>
+<ExternalIdentifier id="urn:uuid:8d214f4f-5ec1-4691-9cd9-8ea2c19be3e3" identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427" registryObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" value="5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO">
+<Name>
+<LocalizedString value="XDSDocumentEntry.patientId"/>
+</Name>
+</ExternalIdentifier>
+<ExternalIdentifier id="urn:uuid:c286e03f-df59-4225-bc70-8bcf9ae01f48" identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab" registryObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8" value="2.16.840.1.113883.3.72.5.9.1.0.5386503746810357474111111111">
+<Name>
+<LocalizedString value="XDSDocumentEntry.uniqueId"/>
+</Name>
+</ExternalIdentifier>
+</ExtrinsicObject>
+<RegistryPackage id="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04">
+<Slot name="submissionTime">
+<ValueList>
+<Value>20150504110603</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="SMS Gateway Package"/>
+</Name>
+<Classification classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d" classifiedObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" id="urn:uuid:e9dfc352-5982-4e19-abd2-7e6d97d3896b" nodeRepresentation="">
+<Slot name="authorPerson">
+<ValueList>
+<Value>8812399^^^^^^^^&amp;2.25.309768652999692686176651983274504471835.646.3.4&amp;ISO</Value>
+</ValueList>
+</Slot>
+<Slot name="authorInstitution">
+<ValueList>
+<Value>Dr. Family's Family Health Practice</Value>
+</ValueList>
+</Slot>
+<Slot name="authorRole">
+<ValueList>
+<Value>Attending</Value>
+</ValueList>
+</Slot>
+</Classification>
+<Classification classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500" classifiedObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" id="urn:uuid:e59488a0-6f5f-4127-a25f-5758b6c3a372" nodeRepresentation="57055-6">
+<Slot name="codingScheme">
+<ValueList>
+<Value>2.16.840.1.113883.6.1</Value>
+</ValueList>
+</Slot>
+<Name>
+<LocalizedString value="Antepartum Summary Note"/>
+</Name>
+</Classification>
+<ExternalIdentifier id="urn:uuid:df427704-79f7-4bff-ac36-dbd95f8637ef" identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446" registryObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" value="5132894987946830603^^^&amp;2.16.840.1.113883.3.72.5.9.1&amp;ISO">
+<Name>
+<LocalizedString value="XDSSubmissionSet.patientId"/>
+</Name>
+</ExternalIdentifier>
+<ExternalIdentifier id="urn:uuid:7c71ed3d-94bb-4140-9f8c-5a4921faebdc" identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8" registryObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" value="2.16.840.1.113883.3.72.5.9.1.1.5549314503748438280111111111">
+<Name>
+<LocalizedString value="XDSSubmissionSet.uniqueId"/>
+</Name>
+</ExternalIdentifier>
+<ExternalIdentifier id="urn:uuid:d230ef7e-eb9f-41c8-ac1c-d67aba13989f" identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832" registryObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" value="2.16.840.1.113883.3.72.5.9.1.2.5190328671848149170">
+<Name>
+<LocalizedString value="XDSSubmissionSet.sourceId"/>
+</Name>
+</ExternalIdentifier>
+</RegistryPackage>
+<Classification classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd" classifiedObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" id="urn:uuid:6ccb01c5-85b4-42b2-ad6a-4f8141ab136b"/>
+<Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember" id="urn:uuid:23c3b747-268b-489b-a5ff-31311414c905" sourceObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" targetObject="urn:uuid:A 9087831b-89ba-4f7a-9399-ca6693bbcc08">
+<Slot name="SubmissionSetStatus">
+<ValueList>
+<Value>Original</Value>
+</ValueList>
+</Slot>
+</Association>
+<Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember" id="urn:uuid:954561d3-5fae-42de-ad7a-41fa22eaff93" sourceObject="urn:uuid:9f16d743-2233-42a6-909e-54d04557be04" targetObject="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8">
+<Slot name="SubmissionSetStatus">
+<ValueList>
+<Value>Original</Value>
+</ValueList>
+</Slot>
+</Association>
+</RegistryObjectList>
+</ns3:SubmitObjectsRequest>
+<ns4:Document id="urn:uuid:A 9087831b-89ba-4f7a-9399-ca6693bbcc08">
+<xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include" href="cid:8208c4c8-d86f-4167-bb4a-507a0b4f465b"/>
+</ns4:Document>
+<ns4:Document id="urn:uuid:A e42bcc8c-eca3-4fee-b444-a397a3d185d8">
+<xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include" href="cid:34b03d17-edcf-499e-93aa-e48ebb85a9ab"/>
+</ns4:Document>
+</ns4:ProvideAndRegisterDocumentSetRequest>
+</S:Body>
+</S:Envelope>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope">
+<S:Header>
+<To xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">http://iol.test.ohie.org:5001/xdsregistry</To>
+<Action xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">urn:ihe:iti:2007:RegistryStoredQuery</Action>
+<ReplyTo xmlns="http://www.w3.org/2005/08/addressing" xmlns:env="http://www.w3.org/2003/05/soap-envelope" env:mustUnderstand="true">
+    <Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+</ReplyTo>
+<MessageID xmlns="http://www.w3.org/2005/08/addressing">uuid:202695d4-5c86-40b3-be2b-52a88aeb0b84</MessageID>
+</S:Header>
+<S:Body>
+<ns4:AdhocQueryRequest xmlns="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0">
+<ns4:ResponseOption returnComposedObjects="true" returnType="LeafClass"/>
+<AdhocQuery id="urn:uuid:14d4debf-8f97-4251-9a74-a90016b0af0d">
+<Slot name="$XDSDocumentEntryPatientId">
+<ValueList>
+<Value>'5132894987946830602^^^&amp;2.16.840.1.113883.3.72.5.9.1'</Value>
+</ValueList>
+</Slot>
+<Slot name="$XDSDocumentEntryStatus">
+<ValueList>
+<Value>('urn:oasis:names:tc:ebxml-regrep:StatusType:Approved')</Value>
+</ValueList>
+</Slot>
+</AdhocQuery>
+</ns4:AdhocQueryRequest>
+</S:Body>
+</S:Envelope>

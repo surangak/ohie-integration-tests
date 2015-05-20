@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:a3cea951-66a5-47b7-a395-7b44292ddb5c</wsa:MessageID>
+<wsa:RelatesTo>uuid:e1e939d9-722a-419f-8d47-1c2fa8d8b9e3</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="Metadata Validation Errors:&#10; Classification &lt;Classification id=&quot;urn:uuid:35e95fa0-9b10-4263-87b4-0aec8f29d18c&quot;&gt;&#10;   is nested inside &lt;ExtrinsicObject Name=&quot;Immunization History&quot; id=&quot;urn:uuid:3a27f151-2fc0-4858-9d52-326f58ef54de&quot;&gt;&#10;   but classifies object &lt;ExtrinsicObject Name=&quot;Immunization History&quot; id=&quot;urn:uuid:0d6f701a-2a13-45e4-a84b-d5283a97d29a&quot;&gt;" errorCode="XDSRegistryMetadataError" location="&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.validate_internal_classifications(Validator.java:107)&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.run(Validator.java:86)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.SubmitObjectsRequestInternal(SubmitObjectsRequest.java:259)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.submitObjectsRequest(SubmitObjectsRequest.java:151)&#10;&#9;gov.nist.registry.ws.serviceclasses.AbstractRegistry.SubmitObjectsRequest(AbstractRegistry.java:71)&#10;&#9;sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;java.lang.reflect.Method.invoke(Method.java:622)&#10;&#9;gov.nist.registry.common2.service.AbstractXDSRawXMLINoutMessageReceiver.invokeBusinessLogic(AbstractXDSRawXMLINoutMessageReceiver.java:151)&#10;&#9;org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic(AbstractInOutMessageReceiver.java:40)&#10;&#9;org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:114)&#10;&#9;org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:173)&#10;&#9;org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:167)&#10;&#9;org.apache.axis2.transport.http.HTTPWorker.service(HTTPWorker.java:267)&#10;&#9;org.apache.axis2.transport.http.server.AxisHttpService.doService(AxisHttpService.java:281)&#10;" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

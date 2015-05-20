@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:78593baa-c3fc-4e29-acbc-ff952ccc7054</wsa:MessageID>
+<wsa:RelatesTo>uuid:a8170ff0-49fc-4072-a5e9-9a395959ea9c</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="Document urn:uuid:0e573123-49cd-4ca8-8e13-3d6276b93208 is not linked to Submission Set with urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember Association" errorCode="XDSRegistryMetadataError" location="Structure.java" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+<ns3:RegistryError codeContext="Association urn:uuid:46994fd6-63db-4fa8-a60f-547593b3e8eb does not have sourceObject pointing to Submission Set but contains SubmissionSetStatus Slot with value Original" errorCode="XDSRegistryMetadataError" location="Structure.java" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+<ns3:RegistryError codeContext="Metadata Validation Errors:&#10; Classification &lt;Classification id=&quot;urn:uuid:7a65c946-07b0-4b13-9230-191943a6671a&quot;&gt;&#10;   is nested inside &lt;ExtrinsicObject Name=&quot;Immunization History&quot; id=&quot;urn:uuid:0e573123-49cd-4ca8-8e13-3d6276b93208&quot;&gt;&#10;   but classifies object &lt;ExtrinsicObject Name=&quot;Immunization History&quot; id=&quot;urn:uuid:4947566a-d03e-4b1e-b481-89e8e46e26d7&quot;&gt;" errorCode="XDSRegistryMetadataError" location="&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.validate_internal_classifications(Validator.java:107)&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.run(Validator.java:86)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.SubmitObjectsRequestInternal(SubmitObjectsRequest.java:259)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.submitObjectsRequest(SubmitObjectsRequest.java:151)&#10;&#9;gov.nist.registry.ws.serviceclasses.AbstractRegistry.SubmitObjectsRequest(AbstractRegistry.java:71)&#10;&#9;sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;java.lang.reflect.Method.invoke(Method.java:622)&#10;&#9;gov.nist.registry.common2.service.AbstractXDSRawXMLINoutMessageReceiver.invokeBusinessLogic(AbstractXDSRawXMLINoutMessageReceiver.java:151)&#10;&#9;org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic(AbstractInOutMessageReceiver.java:40)&#10;&#9;org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:114)&#10;&#9;org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:173)&#10;&#9;org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:167)&#10;&#9;org.apache.axis2.transport.http.HTTPWorker.service(HTTPWorker.java:267)&#10;&#9;org.apache.axis2.transport.http.server.AxisHttpService.doService(AxisHttpService.java:281)&#10;" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

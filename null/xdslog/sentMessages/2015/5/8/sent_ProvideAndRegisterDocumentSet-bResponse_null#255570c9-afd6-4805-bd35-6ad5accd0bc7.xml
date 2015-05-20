@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:d6b37746-4c34-40e1-bb05-33a077611179</wsa:MessageID>
+<wsa:RelatesTo>uuid:255570c9-afd6-4805-bd35-6ad5accd0bc7</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="The following UUIDs which are present in the submission are already present in registry: [urn:uuid:e5be2917-38e7-4780-9aad-7068860b2fe2, urn:uuid:3a059bf1-9302-4c7b-96d9-8aff34352715, urn:uuid:264ce849-7e7b-4fac-99cb-9ae4292c221a, urn:uuid:c9de9a48-1dde-428a-8287-92c735573264, urn:uuid:b65661bb-96a3-4302-87d9-17c08d12f16b, urn:uuid:19b0e94c-e786-4184-9782-6914b06899e3, urn:uuid:6785c1fd-0708-4cc6-904a-0e4d5519af92, urn:uuid:a891e2d8-3246-418f-ac8e-b83729c448fe, urn:uuid:807a2b4f-2442-4d09-bfe6-413b0696a398, urn:uuid:b3963722-1162-42d6-9e90-33cb42226d00, urn:uuid:e8f7587a-3eff-4c38-8c4b-e2d3a94fb8cf, urn:uuid:729e9b3d-f475-473b-812b-eed68d805099, urn:uuid:4e27c506-c5dd-4bc5-b1c8-548d0f1180c9, urn:uuid:8a10b1dd-f786-43ee-88ab-2b5a3a7eeecb, urn:uuid:96061009-a720-49f1-bbc2-d69715a8cbe5, urn:uuid:320bc263-a25a-4029-bf15-a66bea889b09, urn:uuid:0e5737ac-39a5-4919-b8d5-e24ace0eea85]" errorCode="XDSRegistryMetadataError" location="SubmitObjectsRequest.java" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

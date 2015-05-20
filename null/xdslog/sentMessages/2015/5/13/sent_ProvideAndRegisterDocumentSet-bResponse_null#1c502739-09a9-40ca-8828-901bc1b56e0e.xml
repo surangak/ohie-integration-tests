@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:6e80a985-9948-464f-9453-95fda4184090</wsa:MessageID>
+<wsa:RelatesTo>uuid:1c502739-09a9-40ca-8828-901bc1b56e0e</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="Metadata Validation Errors:&#10; Classification &lt;Classification id=&quot;urn:uuid:f8001d7c-ee89-4a07-a21f-740b09d9a7fb&quot;&gt;&#10;   is nested inside &lt;RegistryPackage Name=&quot;SMS Gateway Package&quot; id=&quot;urn:uuid:830a70f1-116b-4578-b82a-4b2d84f767ec&quot;&gt;&#10;   but classifies object &lt;Unknown object urn:uuid:f830a70f1-116b-4578-b82a-4b2d84f767ec&gt;" errorCode="XDSRegistryMetadataError" location="&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.validate_internal_classifications(Validator.java:107)&#10;&#9;gov.nist.registry.common2.registry.validation.Validator.run(Validator.java:84)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.SubmitObjectsRequestInternal(SubmitObjectsRequest.java:259)&#10;&#9;gov.nist.registry.ws.SubmitObjectsRequest.submitObjectsRequest(SubmitObjectsRequest.java:151)&#10;&#9;gov.nist.registry.ws.serviceclasses.AbstractRegistry.SubmitObjectsRequest(AbstractRegistry.java:71)&#10;&#9;sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)&#10;&#9;sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;java.lang.reflect.Method.invoke(Method.java:622)&#10;&#9;gov.nist.registry.common2.service.AbstractXDSRawXMLINoutMessageReceiver.invokeBusinessLogic(AbstractXDSRawXMLINoutMessageReceiver.java:151)&#10;&#9;org.apache.axis2.receivers.AbstractInOutMessageReceiver.invokeBusinessLogic(AbstractInOutMessageReceiver.java:40)&#10;&#9;org.apache.axis2.receivers.AbstractMessageReceiver.receive(AbstractMessageReceiver.java:114)&#10;&#9;org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:173)&#10;&#9;org.apache.axis2.transport.http.HTTPTransportUtils.processHTTPPostRequest(HTTPTransportUtils.java:167)&#10;&#9;org.apache.axis2.transport.http.HTTPWorker.service(HTTPWorker.java:267)&#10;&#9;org.apache.axis2.transport.http.server.AxisHttpService.doService(AxisHttpService.java:281)&#10;" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:RetrieveDocumentSetResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:e770fb40-ebcb-445e-ac3d-6f7a7679ff40</wsa:MessageID>
+<wsa:RelatesTo>uuid:2397250d-4ddb-478f-8dff-d08e0e89c76f</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns4:RetrieveDocumentSetResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0">
+<ns3:RegistryResponse status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="Document not found! document UID:62284905-8672-4cea-a966-86b0127b9802" errorCode="XDSMissingDocument" location="62284905-8672-4cea-a966-86b0127b9802" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error">Document not found! document UID:62284905-8672-4cea-a966-86b0127b9802</ns3:RegistryError>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</ns4:RetrieveDocumentSetResponse>
+</env:Body>
+</env:Envelope>

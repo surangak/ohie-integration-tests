@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:Action>http://www.w3.org/2005/08/addressing/fault</wsa:Action>
+<wsa:RelatesTo>uuid:9daea49c-0d12-452c-abe3-fec963ed7b92</wsa:RelatesTo>
+</soapenv:Header>
+<soapenv:Body>
+<soapenv:Fault>
+<soapenv:Code>
+<soapenv:Value>soapenv:Sender</soapenv:Value>
+<soapenv:Subcode>
+<soapenv:Value xmlns:wsa="http://www.w3.org/2005/08/addressing">wsa:ActionNotSupported</soapenv:Value>
+</soapenv:Subcode>
+</soapenv:Code>
+<soapenv:Reason>
+<soapenv:Text xml:lang="en-US">The [action] cannot be processed at the receiver.</soapenv:Text>
+</soapenv:Reason>
+<soapenv:Detail>
+<wsa:ProblemAction xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:Action>urn:ihe:iti:2007:RegistryStoredQuery</wsa:Action>
+</wsa:ProblemAction>
+</soapenv:Detail>
+</soapenv:Fault>
+</soapenv:Body>
+</soapenv:Envelope>

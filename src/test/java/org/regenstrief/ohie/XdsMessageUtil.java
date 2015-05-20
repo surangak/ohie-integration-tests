@@ -178,10 +178,14 @@ public class XdsMessageUtil {
         DocumentRepositoryPortType port = DocumentRepositoryPortTypeFactory.getDocumentRepositoryPortSoap12(s_repositoryEndpoint);
 
         try {
-            return port.documentRepositoryProvideAndRegisterDocumentSetB(request);
+            RegistryResponseType rrt = port.documentRepositoryProvideAndRegisterDocumentSetB(request);
+            System.out.println("S :" + rrt.getStatus());
+            return rrt;
+
         } catch (Exception e) {
 
             e.printStackTrace();
+
             log.error(e);
             throw new RuntimeException("Document Repository not available: " + s_repositoryEndpoint, e);
         }
@@ -348,8 +352,10 @@ public class XdsMessageUtil {
                     MessageDigest digest = MessageDigest.getInstance("SHA-1");
                     dr.getDocument().writeTo(bos);
                     digest.update(bos.toByteArray());
-                    String calculatedHash = DatatypeConverter.printBase64Binary(digest.digest());
+                    String calculatedHash = DatatypeConverter.printHexBinary(digest.digest());
                     Assert.assertEquals(Integer.parseInt(sizeValue), bos.size());
+                    System.out.println(Integer.parseInt(sizeValue));
+                    System.out.println(bos.size());
                     Assert.assertEquals(hashValue, calculatedHash);
                     log.info("The document size: " + bos.size());
                 }

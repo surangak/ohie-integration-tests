@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:To env:mustUnderstand="true">http://www.w3.org/2005/08/addressing/anonymous</wsa:To>
+<wsa:Action>urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-bResponse</wsa:Action>
+<wsa:MessageID>urn:uuid:e69abfd4-5fde-4504-9385-aab104ee5b33</wsa:MessageID>
+<wsa:RelatesTo>uuid:0c393cf3-db3e-4b8b-8774-1d9d273d6a72</wsa:RelatesTo>
+</env:Header>
+<env:Body>
+<ns3:RegistryResponse xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0" xmlns:ns4="urn:ihe:iti:xds-b:2007" xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0" xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Failure">
+<ns3:RegistryErrorList>
+<ns3:RegistryError codeContext="The following UUIDs which are present in the submission are already present in registry: [urn:uuid:13f4c81e-625e-4671-a658-694a82ae94cf, urn:uuid:6c73951b-acd0-41d6-84c7-72af3cf0702d, urn:uuid:e7e0b7c1-2ca9-40ac-a3ef-1bbd3a2e9cef, urn:uuid:8f6c6859-7ecf-44dd-bb5a-645b7d8f9ad0, urn:uuid:24a9398c-7489-444e-b787-da960e4266bb]" errorCode="XDSRegistryMetadataError" location="SubmitObjectsRequest.java" severity="urn:oasis:names:tc:ebxml-regrep:ErrorSeverityType:Error"/>
+</ns3:RegistryErrorList>
+</ns3:RegistryResponse>
+</env:Body>
+</env:Envelope>

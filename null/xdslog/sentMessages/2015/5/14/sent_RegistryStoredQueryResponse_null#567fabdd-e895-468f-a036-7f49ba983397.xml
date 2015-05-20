@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope">
+<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+<wsa:Action>urn:ihe:iti:2007:RegistryStoredQueryResponse</wsa:Action>
+<wsa:RelatesTo>uuid:567fabdd-e895-468f-a036-7f49ba983397</wsa:RelatesTo>
+</soapenv:Header>
+<soapenv:Body>
+<query:AdhocQueryResponse xmlns:query="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0" status="urn:oasis:names:tc:ebxml-regrep:ResponseStatusType:Success">
+<rim:RegistryObjectList xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"/>
+</query:AdhocQueryResponse>
+</soapenv:Body>
+</soapenv:Envelope>
